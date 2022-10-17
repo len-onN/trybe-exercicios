@@ -26,3 +26,23 @@
  .prim#java{
     background-color: pink;
  }
+ #stack:hover{
+    font-weight: bold;
+    color: orange;
+ }
+ #w3:hover{
+    font-weight: bold;
+    color: green;
+ }
+ #devm:hover{
+    font-weight: bold;
+    color: black;
+ }
+ #devd:hover{
+    font-weight: bold;
+    color:yellow
+ }
+ #trb:hover{
+    font-weight: bold;
+    color: green;
+ }

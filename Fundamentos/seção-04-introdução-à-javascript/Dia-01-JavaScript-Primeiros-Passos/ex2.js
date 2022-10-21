@@ -167,4 +167,37 @@ if (custo < 0 || vDeVenda < 0){
     console.log('O lucro foi de: ' + lucro);
 }
 
-/**/
+/* Exercício 11 - Calculadora de salário líquido dado um salário bruto (IR INSS) */
+
+let sBruto = 3000;
+let sLiquido;
+let sBase;
+
+if (sBruto <= 1556.94){
+    sBase = sBruto - sBruto*0.08;
+}
+if (sBruto <= 2594.92 && sBruto > 1556.94){
+    sBase = sBruto - sBruto*0.09;
+}
+if (sBruto <= 5189.82 && sBruto > 2594.93){
+    sBase = sBruto - sBruto*0.11;
+}
+if (sBruto > 5189.82){
+    sBase = sBruto - 570.88;
+}
+if (sBase <= 1903.98){
+    sLiquido = sBase - (sBase*0.075 - 142.8);
+    console.log(sLiquido);
+} else if (sBase <= 2826.65 && sBase > 1903.98){
+    sLiquido = sBase - (sBase*0.075 - 142.8);
+    console.log(sLiquido);
+} else if (sBase <= 3751.05 && sBase > 2826.65){
+    sLiquido = sBase - (sBase*0.15 - 354.8);
+    console.log(sLiquido);
+} else if (sBase > 3751.05 && sBase <= 4664.68){
+    sLiquido = sBase - (sBase*0.225 - 636.13);
+    console.log(sLiquido);  
+} else if (sBase > 4664.68){
+    sLiquido = sBase - (sBase*0.275 - 869.36);
+}
+

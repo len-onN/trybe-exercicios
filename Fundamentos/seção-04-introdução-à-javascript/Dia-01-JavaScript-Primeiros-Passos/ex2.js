@@ -153,4 +153,18 @@ if (d1 % 2 !== 0 || d2 % 2 !== 0 || d3 % 2 !== 0){
     console.log(false);
 }
 
-/* Exercício 10 - */
+/* Exercício 10 - calculadora de lucro */
+
+const custo = -0.35;
+const vDeVenda = 0.70;
+const tax = 0.2;
+
+if (custo < 0 || vDeVenda < 0){
+    console.log('Os conceitos de custo e venda exigem valores positivos');
+} else {
+    let vDeCusto = custo + tax*custo;
+    let lucro = vDeVenda - vDeCusto;
+    console.log('O lucro foi de: ' + lucro);
+}
+
+/**/

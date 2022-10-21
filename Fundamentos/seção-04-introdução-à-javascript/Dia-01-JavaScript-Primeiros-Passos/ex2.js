@@ -137,4 +137,20 @@ if (b1 % 2 === 0 || b2 % 2 === 0 || b3 % 2 === 0){
     console.log(false);
 }
 
-/* Exercício 9 - */
+/* Exercício 9 - Igual o 8 só que ao contrário */
+
+let d1 = 3;
+let d2 = 5;
+let d3 = 10;
+
+if (d1 % 2 !== 0 || d2 % 2 !== 0 || d3 % 2 !== 0){
+    const f1 = d1;
+    const f2 = d2;
+    const f3 = d3;
+    console.log(f1, f2, f3);
+    console.log(true);
+} else {
+    console.log(false);
+}
+
+/* Exercício 10 - */

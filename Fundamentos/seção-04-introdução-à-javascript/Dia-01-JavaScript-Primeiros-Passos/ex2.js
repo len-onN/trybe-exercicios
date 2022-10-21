@@ -68,7 +68,9 @@ if (a1 < 0 || a2 < 0 || a3 < 0){
 
 /* Exercício 6 - Switch/Case para explicar peças de xadrez */
 
-let piece = 'torre';
+let receivedTerm = 'Torre'
+let piece = receivedTerm.toLowerCase();
+
 
 switch (piece){
     case 'torre':
@@ -93,3 +95,5 @@ switch (piece){
         console.log('Este termo não é conhecido como um nome de peças de xadrez.');
         break;
 }
+
+/* Exercício 7 - */

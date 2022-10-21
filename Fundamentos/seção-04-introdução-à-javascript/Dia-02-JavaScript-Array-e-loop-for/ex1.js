@@ -57,8 +57,28 @@ console.log(impar);
 
 /* - Exercício - Qual o menor valor do array? - */
 
-
+let numero = 1000;
 
 for (let i6 = 0; i6 < numbers.length; i6++){
-    if (numbers[i6] < numero)
+    if (numbers[i6] < numero){
+        numero = numbers[i6];
+    }
+}
+console.log(numero);
+
+/* - Exercício - Criando um array utilizando for - */
+
+let ar = [];
+
+for (let i7 = 0; i7 < 26; i7++){
+    ar.push(i7);
+}
+console.log(ar);
+
+/* - Dividindo os termos de um array - */
+
+let result = [];
+
+for (i8 = 0; i8 < 26; i8++){
+
 }

@@ -49,15 +49,16 @@ let impar = 0;
 for (let i5 = 0; i5 < numbers.length; i5++){
     if (numbers[i5] % 2 !== 0){
         impar++;
-    } else {
-        console.log('Não há números impares');
     }
+    if (impar === 0){
+        console.log('não há impares!');
+    } 
 }
 console.log(impar);
 
 /* - Exercício - Qual o menor valor do array? - */
 
-let numero = 1000;
+let numero = numbers[0];
 
 for (let i6 = 0; i6 < numbers.length; i6++){
     if (numbers[i6] < numero){
@@ -80,5 +81,6 @@ console.log(ar);
 let result = [];
 
 for (i8 = 0; i8 < 26; i8++){
-
+    result[i8] = ar[i8]/2;
 }
+console.log(result);

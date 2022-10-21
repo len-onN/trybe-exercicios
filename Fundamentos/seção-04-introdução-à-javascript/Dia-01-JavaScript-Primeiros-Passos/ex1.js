@@ -46,3 +46,28 @@ if (currentHour >= 22 && currentHour <= 24){
   message = 'Hmmm, cheiro de café recém-passado';
 }
 console.log(message);
+
+/* Exercício Para Fixar - 5 - Switch/case */
+
+  let situation = 'aprovada';
+  
+  switch (situation){
+    case 'aprovada':
+      console.log('Parabéns, você foi aprovada(o)!');
+    case 'reprovada':
+      console.log('Você foi reprovada(o)!');
+    case 'lista':
+      console.log('Você está na lista de espera.');
+    default:
+      console.log('Informação incorreta.')
+  }
+  /* Exercício - Mensagem para situação aprova-reprova-espera */
+
+  const notaTecnica = 75;
+if (notaTecnica >= 80){
+    console.log('Parabéns, você foi aprovada(o)!')
+} else if (notaTecnica >=60){
+    console.log('Você está na nossa lista de espera')
+} else {
+    console.log('Você foi reprovada(o)');
+}

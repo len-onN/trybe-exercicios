@@ -96,4 +96,27 @@ switch (piece){
         break;
 }
 
-/* Exercício 7 - */
+/* Exercício 7 - Converte notas 0~10 para F~A */
+
+let nota = 10;
+if (nota > 100 || nota < 0){
+    console.log('Valor recebido não está dentro do escopo de valores que representam nota');
+} else if (nota >= 90){
+    nota = 'A';
+    console.log(nota);
+} else if (nota >= 80){
+    nota = 'B';
+    console.log(nota);
+}else if (nota >= 70){
+    nota = 'C';
+    console.log(nota);
+}else if (nota >= 60){
+    nota = 'D';
+    console.log(nota);
+}else if (nota >= 50){
+    nota = 'E';
+    console.log(nota);
+}else if (nota < 50){
+    nota = 'F';
+    console.log(nota);
+}

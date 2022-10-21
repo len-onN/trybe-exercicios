@@ -1,19 +1,19 @@
 /* Exercício 1 - 5 operações aritméticas */
 
-let a = 2;
-let b = 5;
-let c;
+let a6 = 2;
+let b6 = 5;
+let c6;
 
-c = (a + b);
-console.log(c);
-c = (b/a);
-console.log(c);
-c = (a*b);
-console.log(c);
-c = (a**b);
-console.log(c);
-c = (b - a);
-console.log(c);
+c6 = (a6 + b6);
+console.log(c6);
+c6 = (b6/a6);
+console.log(c6);
+c6 = (a6*b6);
+console.log(c6);
+c6 = (a6**b6);
+console.log(c6);
+c6 = (b6 - a6);
+console.log(c6);
 
 /* Exercício 2 - Compara e retorna o maior */
 
@@ -28,25 +28,25 @@ if (a > b){
 
 /* Exercício 3 - Compara 3 números retorna maior */
 
-const a = 10;
-const b = 11;
-const c = 12;
+const a5 = 10;
+const b5 = 11;
+const c5 = 12;
 
-if (a > b && a > c){
+if (a5 > b5 && a5 > c5){
     console.log(a);
-} else if (b > a && b > c) {
-    console.log(b);
+} else if (b5 > a5 && b5 > c5) {
+    console.log(b5);
 } else {
-    console.log(c);
+    console.log(c5);
 }
 
 /* Exercício 4 - Avalia um número como positivo, negativo ou zero */
 
-let a = -1394;
+let a4 = -1394;
 
-if (a > 0){
+if (a4 > 0){
     console.log('positive');
-} else if (a < 0){
+} else if (a4 < 0){
     console.log('negative');
 } else {
     console.log('zero');
@@ -120,3 +120,21 @@ if (nota > 100 || nota < 0){
     nota = 'F';
     console.log(nota);
 }
+
+/* Exercício 8 - 1 por todos - se um for par, os 3 são constantes e é true, caso contrário, false */
+
+let b1 = 3;
+let b2 = 5;
+let b3 = 10;
+
+if (b1 % 2 === 0 || b2 % 2 === 0 || b3 % 2 === 0){
+    const c1 = b1;
+    const c2 = b2;
+    const c3 = b3;
+    console.log(c1, c2, c3);
+    console.log(true);
+} else {
+    console.log(false);
+}
+
+/* Exercício 9 - */

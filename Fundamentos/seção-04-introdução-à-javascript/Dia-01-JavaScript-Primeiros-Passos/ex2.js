@@ -39,3 +39,30 @@ if (a > b && a > c){
 } else {
     console.log(c);
 }
+
+/* Exercício 4 - Avalia um número como positivo, negativo ou zero */
+
+let a = -1394;
+
+if (a > 0){
+    console.log('positive');
+} else if (a < 0){
+    console.log('negative');
+} else {
+    console.log('zero');
+}
+
+/* Exercício 5 :rocket: - Analisador de ângulos, e triângulos */
+
+let a1 = -41;
+let a2 = 60;
+let a3 = 80;
+
+if (a1 < 0 || a2 < 0 || a3 < 0){
+    console.log('Valor inapropriado para ângulo, apenas valores positivos');
+} else if ( a1 + a2 + a3 === 180){
+    console.log(true);
+} else {
+    console.log(false);
+}
+

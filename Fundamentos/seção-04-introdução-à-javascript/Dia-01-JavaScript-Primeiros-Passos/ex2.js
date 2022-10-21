@@ -66,3 +66,30 @@ if (a1 < 0 || a2 < 0 || a3 < 0){
     console.log(false);
 }
 
+/* Exercício 6 - Switch/Case para explicar peças de xadrez */
+
+let piece = 'torre';
+
+switch (piece){
+    case 'torre':
+        console.log('A torre se movimenta em linha reta, em qualquer sentido, e é limitada pelas outras peças');
+    break;
+    case 'bispo':
+        console.log('O bispo se movimenta em diagonal, em qualquer sentido, e é limitado pelas outras peças');
+        break;
+    case 'cavalo':
+        console.log('O cavalo se movimenta duas casas em linha reta e então uma casa para o lado, desde que a casa final esteja vazia não é limitado por outras peças');
+        break;
+    case 'peão':
+        console.log('O peão se movimenta em linha reta, sempre na direção do campo inimigo. Quando uma peça inimiga está na diagonal imediata a frente do peão, ele pode eliminar essa peça');
+        break;
+    case 'rainha':
+        console.log('Efetua o movimento de todas as peças, exceto ao movimento do cavalo');
+        break;
+    case 'rei':
+        console.log('O rei se movimenta para qualquer uma das casas imediatamente ligadas a sua');
+    break;
+    default:
+        console.log('Este termo não é conhecido como um nome de peças de xadrez.');
+        break;
+}

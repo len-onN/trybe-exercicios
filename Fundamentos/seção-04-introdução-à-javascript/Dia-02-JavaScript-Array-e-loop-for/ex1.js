@@ -23,6 +23,23 @@ console.log(soma1);
 let med = soma1/numbers.length;
 console.log(med);
 
-/* -  - */
+/* - Med é maior ou menor/igual a 20? - */
+
+if (med > 20){
+    console.log('valor maior que 20');
+} else {
+    console.log('valor menor ou igual a 20');
+}
+
+/* - For - qual o maior valor do array? - */
+
+let maior = 0;
+
+for (let i4 = 0; i4 < numbers.length; i4 += 1){
+    if (numbers[i4] > maior) {
+        maior = numbers[i4]
+    }
+}
+console.log(maior);
 
 

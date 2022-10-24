@@ -37,5 +37,21 @@ for (let i = 0; i < auray.length; i += 1){
 console.log(b);
 
 
-/**/
+/* Exercício número primo */
+
+let greatPuraime = 0;
+
+for (i = 2; i <= 50; i += 1){
+    let puraime = true;
+    for (o = 2; o < i; o += 1){
+        if (i % o === 0){
+            puraime = false;
+        }
+    }
+    if (puraime){
+        greatPuraime = i;
+    }
+}
+console.log(greatPuraime);
+
 

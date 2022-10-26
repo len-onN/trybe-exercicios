@@ -34,4 +34,37 @@ let names = {
   function adicao (a, b){
     return a + b;
   }
-  console.log(c);
+  console.log(adicao(2, 5));
+  
+  function subtracao (a, b){
+    return a - b;
+  }
+  console.log(subtracao(5, 2));
+
+  function multiplicacao (a, b){
+    return a*b;
+  }
+  console.log(multiplicacao(2, 5));
+
+  function divisao(a, b){
+    return a/b;
+  }
+  console.log(divisao(10, 5));
+
+  function modulo (a, b){
+    return a % b;
+  }
+  console.log(modulo(10, 3));
+
+  // retorna o maior de dois número
+
+  function greaterNum (a, b){
+    if (a > b){
+        return a + ' é maior que ' + b;
+    } else if (b > a){
+        return b + ' é maior que ' + b;
+    } else {
+        return a + ' e ' + b + ' são valores iguais';
+    }
+  }
+  console.log(greaterNum(10, 10));

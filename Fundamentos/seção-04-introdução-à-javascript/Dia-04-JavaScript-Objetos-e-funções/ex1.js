@@ -68,4 +68,18 @@ let names = {
     }
   }
   console.log(greaterNum(10, 10));
-  
+
+  // maior de três
+
+  function top3(a, b, c){
+    if (a > b){
+      if (a > c){
+        return a;
+      } else { return c; }
+    } else if (b > a){
+      if (b > c){
+        return b;
+      } else { return c;}
+    }
+  }
+  console.log(top3(12, 10, 4));  

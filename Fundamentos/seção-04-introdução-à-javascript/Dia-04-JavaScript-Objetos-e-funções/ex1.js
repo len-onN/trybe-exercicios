@@ -83,3 +83,16 @@ let names = {
     }
   }
   console.log(top3(12, 10, 4));  
+
+  // Positivo, Negativo ou Zero? 
+
+  function numState (a){
+    if (a > 0){
+      return 'positve';
+    } else if (a < 0){
+      return 'negative';
+    } else {
+      return 'zero';
+    }
+  }
+  console.log(numState(3), numState(-3), numState(0));

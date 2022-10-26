@@ -55,3 +55,5 @@ for (let i in a){
   return a[idR];
 }
 console.log(rCount([2, 3, 2, 5, 8, 2, 3]));
+
+

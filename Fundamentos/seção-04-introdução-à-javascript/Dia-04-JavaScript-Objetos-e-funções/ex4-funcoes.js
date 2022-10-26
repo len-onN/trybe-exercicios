@@ -20,3 +20,18 @@ function analogueBIndex(ar){
     return i;
 }
 console.log(analogueBIndex(array));
+
+// ex3
+function bigW (a){
+    let bigW1 = [0];
+    for (let i in a){
+        if (a[i].length > bigW1.length){
+            bigW1 = a[i];
+        }
+    }
+    return bigW1;
+}
+console.log(bigW (['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+// ex4
+let ar1 = [2, 3, 2, 5, 8, 2, 3];

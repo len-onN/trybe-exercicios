@@ -28,3 +28,10 @@ let names = {
   for (let i1 in car){
     console.log(i1, car[i1]);
   }
+
+  // Exercício 1 - praticando função
+
+  function adicao (a, b){
+    return a + b;
+  }
+  console.log(c);

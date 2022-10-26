@@ -96,3 +96,18 @@ let names = {
     }
   }
   console.log(numState(3), numState(-3), numState(0));
+
+  // Programa - os ângulos correspondem à um triângulo?
+
+  function isTri (a, b, c){
+    d = a + b + c;
+    if (a > 0){
+      if (b > 0){
+        if (c > 0){
+          if (d == 180){
+            return true;
+          } else { return false;}
+        } else { return false; }
+      } else { return false; }
+    } else { return false; }
+  }

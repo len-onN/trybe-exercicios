@@ -107,7 +107,8 @@ let names = {
           if (d == 180){
             return true;
           } else { return false;}
-        } else { return false; }
-      } else { return false; }
-    } else { return false; }
+        } else { return 'Erro - Para ângulo, apenas valores positivos.'; }
+      } else { return 'Erro - Para ângulo, apenas valores positivos.'; }
+    } else { return 'Erro - Para ângulo, apenas valores positivos.'; }
   }
+  console.log(isTri(20, 50, 110), isTri (-1, 89, 92), isTri (10, 10, 10));

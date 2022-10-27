@@ -69,3 +69,49 @@ function sumInt(n){
     return c;
 }
 console.log(sumInt(3));
+
+// ex6
+/*function isEnd(word, ending){
+            word = word.split('');
+            ending = ending.split('');
+            let d = word.length - ending.length;
+            let verify = []; 
+            let n1;
+            let n2;         
+        for (let i = word.length - 1; i > d - 1; i -= 1){
+            if (word[i] === ending[i - d]){
+                verify[i - d] = word[i];               
+            }
+        }
+        n1 = verify.join('');
+        n2 = ending.join('');
+        if (n1 = n2){
+            console.log(verify, ending)
+            controle = true;
+        } else { controle = false;}
+    return controle;    
+    }
+let ba = 'aninha';
+let bo = 'nanha';
+console.log(isEnd('aninha', 'ninho'));
+//ba = ba.split('');
+//bo = bo.split('');
+//console.log(`${ba.length - 1},
+//             ${bo.length - 1}`);*/
+
+function endW(word, ending) {
+    word = word.split('');
+    ending = ending.split('');
+    let check = true;
+  
+    for (let index = 0; index < ending.length; index += 1) {
+        if (word[word.length - ending.length + index] != ending[index]) {
+            check = false;
+        }
+    }
+  
+    return check;
+  }
+  
+  console.log(endW('Glaucier', 'ier')); 
+  console.log(endW('Gloria', 'Salin')); 

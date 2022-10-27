@@ -115,3 +115,8 @@ function endW(word, ending) {
   
   console.log(endW('Glaucier', 'ier')); 
   console.log(endW('Gloria', 'Salin')); 
+  function sum(a, b) {
+    return a + b;
+  }
+  console.log(sum(1, 2));
+  

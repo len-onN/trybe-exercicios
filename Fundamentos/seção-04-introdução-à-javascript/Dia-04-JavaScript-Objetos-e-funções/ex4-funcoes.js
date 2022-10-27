@@ -56,4 +56,16 @@ for (let i in a){
 }
 console.log(rCount([2, 3, 2, 5, 8, 2, 3]));
 
-
+// ex5
+function sumInt(n){
+    let c = 0;
+    if (n > 0){
+    for (let i = 1; n >= i; i += 1){
+            c = c + i;
+        }
+    } else {
+        return `${n} não é um numero natural!`
+    }
+    return c;
+}
+console.log(sumInt(3));

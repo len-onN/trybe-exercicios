@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        //ex 1 - h1 Exercício - JavaScript DOM
+    const father = document.querySelector('body');
+    console.log(father);
+    const zep = document.createElement('h1');
+    console.log(zep);
+    zep.innerHTML = 'Exercício - JavaScript DOM';
+    zep.id = 'zep';
+    father.appendChild(zep);
+
+        //ex 2 - tag main
+    const mA = document.createElement('main');
+    mA.className = 'main-content';
+    console.log(mA);
+    father.appendChild(mA);
+        
+        //ex 3 - section mA child
+    const sC = document.createElement('section');
+    sC.className = 'center-content';
+    mA.appendChild(sC);
+    </script>
+  </body>
+</html>

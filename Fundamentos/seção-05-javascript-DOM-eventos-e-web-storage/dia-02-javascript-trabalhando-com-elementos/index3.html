@@ -76,6 +76,47 @@
     const sC = document.createElement('section');
     sC.className = 'center-content';
     mA.appendChild(sC);
+        
+    //ex 4 - p sC child
+    const pC = document.createElement('p');
+    console.log(pC);
+    pC.innerHTML = "As brumas, vistas de perto, revelam-se o despertar - o ar, empurrado às profundezas pela quebra da onda, retorce-se em direção à superfície, onde explode em brumas, onde explode em liberdade."
+    sC.appendChild(pC);
+
+    //ex 5 - section left
+    const sL = document.createElement('section')
+    sL.className = 'left-content';
+    mA.appendChild(sL);
+
+    //ex 6 - section right
+    const sR = document.createElement('section')
+    sL.className = 'right-content';
+    mA.appendChild(sR);
+
+    //ex 6 - img
+    const img = document.createElement('img');
+    img.className = 'small-image';
+    img.src = 'https://picsum.photos/200';
+    sL.appendChild(img);
+
+    //ex 7 - ol 
+    const ul = document.createElement('ul');
+    sR.appendChild(ul);
+
+    array = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];    
+    
+    for (let i = 0; i < array.length; i += 1){
+        let li = document.createElement('li');  
+        li.innerHTML = array[i];
+        console.log(li);
+        ul.appendChild(li);
+    }
+    
+    const li10 = document.createElement('li');
+    li10.innerText = 'dez';
+    ol.appendChild(li10);
+
+    // ex 8 - 
     </script>
   </body>
 </html>

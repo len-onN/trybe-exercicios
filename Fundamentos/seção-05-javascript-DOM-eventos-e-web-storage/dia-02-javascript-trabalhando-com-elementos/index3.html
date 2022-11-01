@@ -108,15 +108,30 @@
     for (let i = 0; i < array.length; i += 1){
         let li = document.createElement('li');  
         li.innerHTML = array[i];
-        console.log(li);
+        //console.log(li);
         ul.appendChild(li);
     }
-    
-    const li10 = document.createElement('li');
-    li10.innerText = 'dez';
-    ol.appendChild(li10);
 
-    // ex 8 - 
+    // ex 8 - ad h3
+    for (let a = 0; a < 3; a += 1){
+        const h3 = document.createElement('h3')
+        h3.className = "description";
+        //console.log(h3);
+        mA.appendChild(h3);
+    }
+
+    // ex 9 - title
+    zep.className = "title";
+    
+    // ex 11 - remove section
+    mA.removeChild(sL);
+    //ex 12 - add section style;
+    sR.style.marginRight = "auto";
+    sR.style.backgroundColor = "green";
+    
+    //ex 13 
+    ul.lastChild.remove();
+    ul.lastChild.remove();
     </script>
   </body>
 </html>

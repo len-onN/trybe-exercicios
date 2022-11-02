@@ -13,7 +13,7 @@ const myWebpage = document.getElementById('my-spotrybefy');
 const techChange = (event) => {
     const tech = document.querySelector('.tech');
     tech.classList.remove('tech');
-    tech.classList.add('tech');
+    event.target.classList.add('tech');
     input.value = '';
 }
 firstLi.addEventListener('click', techChange);
@@ -22,14 +22,29 @@ thirdLi.addEventListener('click', techChange);
 
 // - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
+input.addEventListener('input', (event) => {
+  const textC = document.querySelector('.tech');
+  textC.innerText = event.target.value;
+});
 
-// - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
+ 
+ 
+ // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
+
 //  - Que tal redirecionar para seu portfólio?
 
+myWebpage.addEventListener('dblclick', () => {
+  window.location.replace('https://len-onn.github.io/');
+});
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
-
+myWebpage.addEventListener('mouseover', () => {
+  myWebpage.style.color = 'red';
+});
+myWebpage.addEventListener('mouseleave', () => {
+  myWebpage.style.color = 'white';
+});
 // Segue abaixo um exemplo do uso de event.target:
 
 
@@ -41,6 +56,8 @@ const resetText = (event) => {
 }
 
 firstLi.addEventListener('dblclick', resetText);
+secondLi.addEventListener('dblclick', resetText);
+thirdLi.addEventListener('dblclick', resetText);
 
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o

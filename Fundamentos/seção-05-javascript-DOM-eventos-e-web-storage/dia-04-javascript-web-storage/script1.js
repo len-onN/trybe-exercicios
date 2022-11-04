@@ -40,6 +40,7 @@ function btnBrew (){
                 ul.style.textAlign = 'center';
                 li.style.margin = '1px';
                 btnC.innerText = bgcolor[i1];
+                btnC.id = `bgcolor${i1}`;
                 
         }
         } else if (i == 1){
@@ -52,6 +53,7 @@ function btnBrew (){
                 ul.style.textAlign = 'center';
                 li.style.margin = '1px';
                 btnC.innerText = textC[i1];
+                btnC.id = `textC${i1}`;
                 
         }
         } else if (i == 2){
@@ -64,7 +66,7 @@ function btnBrew (){
                 ul.style.textAlign = 'center';
                 li.style.margin = '1px';
                 btnC.innerText = fontS[i1];
-                
+                btnC.id = `fontS${i1}`;
         }
         } else if (i == 3){
             for (let i1 = 0; i1 < lineH.length; i1 += 1){
@@ -76,7 +78,7 @@ function btnBrew (){
                 li.style.listStyleType = 'none';
                 li.style.margin = '1px';
                 btnC.innerText = lineH[i1];
-                
+                btnC.id = `lineH${i1}`;
         }
         }else if (i == 4){
             for (let i1 = 0; i1 < fFam.length; i1 += 1){
@@ -88,7 +90,7 @@ function btnBrew (){
                 li.style.listStyleType = 'none';
                 li.style.margin = '1px';
                 btnC.innerText = fFam[i1];
-                
+                btnC.id = `fFam${i1}`;
         }
         }
     }

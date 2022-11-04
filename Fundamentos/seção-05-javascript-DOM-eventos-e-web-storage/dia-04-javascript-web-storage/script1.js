@@ -89,13 +89,104 @@ function btnBrew (){
                 ul.style.textAlign = 'center';
                 li.style.listStyleType = 'none';
                 li.style.margin = '1px';
-                btnC.innerText = fFam[i1];
+                btnC.innerText = fFam[i1];        
                 btnC.id = `fFam${i1}`;
         }
         }
     }
 };
 btnBrew();
+const bgcolor1 = document.querySelector('#bgcolor1');
+bgcolor1.addEventListener('click', ()=>{
+    const body = document.querySelector('main');
+    body.style.backgroundColor = bgcolor[1];
+});
+const bgcolor0 = document.querySelector('#bgcolor0');
+bgcolor0.addEventListener('click', ()=>{
+    const body = document.querySelector('main');
+    body.style.backgroundColor = bgcolor[0];
+});
+const bgcolor2 = document.querySelector('#bgcolor2');
+bgcolor2.addEventListener('click', ()=>{
+    const body = document.querySelector('main');
+    body.style.backgroundColor = bgcolor[2];
+});
+const fontC = document.querySelector('p');
+
+const textC0 = document.querySelector('#textC0');
+textC0.addEventListener('click', ()=>{
+    fontC.style.color = textC[0];
+});
+const textC1 = document.querySelector('#textC1');
+textC1.addEventListener('click', ()=>{
+    
+    fontC.style.color = textC[1];
+});
+const textC2 = document.querySelector('#textC2');
+textC2.addEventListener('click', ()=>{
+    
+    fontC.style.color = textC[2];
+});
+const textC3 = document.querySelector('#textC3');
+textC3.addEventListener('click', ()=>{
+    fontC.style.color = textC[3];
+});
+
+const fontS0 = document.querySelector('#fontS0');
+fontS0.addEventListener('click', ()=>{
+    fontC.style.fontSize = fontS[0];
+});
+const fontS1 = document.querySelector('#fontS1');
+fontS1.addEventListener('click', ()=>{
+    fontC.style.fontSize = fontS[1];
+});
+const fontS2 = document.querySelector('#fontS2');
+fontS2.addEventListener('click', ()=>{
+    fontC.style.fontSize = fontS[2];
+});
+const fontS3 = document.querySelector('#fontS3');
+fontS3.addEventListener('click', ()=>{
+    fontC.style.fontSize = fontS[3];
+});
+
+const lineH0 = document.querySelector('#lineH0');
+lineH0.addEventListener('click', ()=>{
+    fontC.style.lineHeight = lineH[0];
+});
+const lineH1 = document.querySelector('#lineH1');
+lineH1.addEventListener('click', ()=>{
+    fontC.style.lineHeight = lineH[1];
+});
+const lineH2 = document.querySelector('#lineH2');
+lineH2.addEventListener('click', ()=>{
+    fontC.style.lineHeight = lineH[2];
+});
+const lineH3 = document.querySelector('#lineH3');
+lineH3.addEventListener('click', ()=>{
+    fontC.style.lineHeight = lineH[3];
+});
+
+const fFam0 = document.querySelector('#fFam0');
+fFam0.addEventListener('click', ()=>{
+    fontC.style.fontFamily = fFam[0];
+});
+const fFam1 = document.querySelector('#fFam1');
+fFam1.addEventListener('click', ()=>{
+    fontC.style.fontFamily = fFam[1];
+});
+/*for (let a = 0; a < fFam.length; a += 1){
+ const b1 = document.querySelector(`#fFam${a}`);
+ b1.addEventListener('click', ()=>{
+    console.log(pL);
+    if (a === 0){
+        p1L.style.fontSize = '0.5em'; 
+    } else {
+       // const p1L = document.getElementsByTagName('p');
+        p1L.style.fontSize = '2em';
+    }
+ });
+}*/
+
 /*nav.appendChild(ul);
 ul.appendChild(li);
 li.id = "bgc";

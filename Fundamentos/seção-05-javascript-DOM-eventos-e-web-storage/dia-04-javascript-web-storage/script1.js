@@ -1,9 +1,9 @@
 let options = ['Cor de Fundo', 'Cor do Texto', 'Tamanho da Fonte', 'Espaço entre linhas', 'Tipo de Fonte'];
 let idOpt = ['bgc', 'txtc', 'fsize', 'lineH', 'fFam'];
 let bgcolor = ['red', 'blue', 'green'];
-let textC = ['rgb(123, 120, 190)', 'yellow', 'green', 'white'];
-let fontS = ['8pt', '10pt', '13pt', '15pt'];
-let lineH = ['0.5em', '0.8em', '1.2em', '1.5em'];
+let textC = ['rgb(230, 120, 190)', 'yellow', 'green', 'white'];
+let fontS = ['12pt', '14pt', '16pt', '18pt'];
+let lineH = ['1em', '1.2em', '1.5em', '1.8em'];
 let fFam = ['Arial, Helvetica, sans-serif', '"Times New Roman", Times, serif'];
 
 function btnBox () {
@@ -28,7 +28,8 @@ function btnBox () {
 btnBox();
 function btnBrew (){
     for (let i = 0; i < idOpt.length; i += 1){    
-        const ul = document.querySelector(`#${idOpt[i]}`)
+        const ul = document.querySelector(`#${idOpt[i]}`);
+        ul.style.paddingInlineStart = '0px';
         //console.log(ul);
         if (i == 0){
             for (let i1 = 0; i1 < bgcolor.length; i1 += 1){
@@ -173,6 +174,8 @@ fFam0.addEventListener('click', ()=>{
 const fFam1 = document.querySelector('#fFam1');
 fFam1.addEventListener('click', ()=>{
     fontC.style.fontFamily = fFam[1];
+    localStorage.fFam1 = fFam[1];
+    console.log(localStorage);
 });
 /*for (let a = 0; a < fFam.length; a += 1){
  const b1 = document.querySelector(`#fFam${a}`);

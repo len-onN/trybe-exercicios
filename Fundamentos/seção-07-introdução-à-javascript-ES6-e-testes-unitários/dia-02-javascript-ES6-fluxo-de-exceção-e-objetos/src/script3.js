@@ -1,4 +1,4 @@
-const techList = (technologies, name1){
+const techList = (technologies, name1)=>{
     if (technologies.length === 0){
         return "array vazio";
     }

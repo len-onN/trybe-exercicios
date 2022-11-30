@@ -67,4 +67,33 @@ const books = [
     return books.find(element => element.author.birthYear === 1947).author.name;
   }
   console.log(a());
+  function b() {
+    let copyCat;
+    books.forEach((element) => {
+       if (!copyCat || element.name.length < copyCat.length) {
+        copyCat = element.name;
+       } 
+    });
+    return copyCat;
+  }
+  console.log(b());
+
+  function c() {
+    return books.find(element => element.name.length === 26).name;
+  }
+  console.log(c());
+
+  function d() {
+    return books.every((book) => (
+        book.author.birthYear >= 1901 && book.author.birthYear <= 2000
+      ));
+  }
+  console.log(d());
+
+  function e() {
+    return books.some((book) => book.releaseYear >= 1980 && book.releaseYear <= 1989);
+  }
+  console.log(e());
+
+
   
